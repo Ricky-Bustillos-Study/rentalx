@@ -18,6 +18,7 @@
     "eslint-plugin-import-helpers"
   ],
   "rules": {
+    "max-len": "off",
     "no-use-before-define": "off",
     "arrow-parens": "off",
     "linebreak-style": [
