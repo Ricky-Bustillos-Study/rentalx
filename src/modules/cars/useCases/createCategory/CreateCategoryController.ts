@@ -3,6 +3,7 @@ import { CreateCategoryUseCase } from './CreateCategoryUseCase';
 
 export class CreateCategoryController {
   constructor(private createCategoryUseCase: CreateCategoryUseCase) {}
+
   handle(request: Request, response: Response): Response {
     const { description, name } = request.body;
 
