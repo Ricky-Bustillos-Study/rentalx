@@ -1,3 +1,12 @@
-import { createConnection } from 'typeorm';
+import { ConnectionOptions, createConnection } from 'typeorm';
 
-createConnection();
+const config: ConnectionOptions = {
+  type: 'postgres',
+  port: 5432,
+  host: 'database_rentx',
+  username: 'admin',
+  password: 'ignite',
+  database: 'db_rentx',
+};
+
+createConnection(config);
